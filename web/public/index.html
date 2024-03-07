@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forum</title>
+    <link rel="stylesheet" href="/src/styles/styles.css">
+</head>
+
+<body>
+    <header>
+        <h2 class="logo">Forum</h2>
+        <nav class="navigation">
+            <a id="home">Home</a>
+            <a id="like-menu">Liked posts</a>
+            <a id="my-posts">My posts</a>
+            <a id="new-post">New Post</a>
+            <button class="btnLogout-popup">Logout</button>
+            <button class="btnLogin-popup">Login</button>
+        </nav>
+    </header>
+
+    <div id="error-message"></div>
+    <div id="success-message"></div>
+
+    <div class="custom-alert" id="custom-alert">
+        <div class="custom-alert-content" id="custom-alert-content">
+            <p id="custom-alert-message"></p>
+            <button id="custom-alert-button">OK</button>
+        </div>
+    </div>
+
+    <div id="categories"></div>
+    <div id="posts"></div>
+
+    <div class="wrapper">
+        <span class="icon-close">
+            <ion-icon name="close-outline"></ion-icon>
+        </span>
+
+        <div class="form-box login">
+            <h2>Login</h2>
+            <form id="login-form">
+                <div class="input-box">
+                    <span class="icon">
+                        <ion-icon name="person-outline"></ion-icon>
+                    </span>
+                    <input type="text" id="login-username" name="login-username" required>
+                    <label>Username</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon">
+                        <ion-icon name="lock-closed-outline"></ion-icon>
+                    </span>
+                    <input type="password" id="login-password" name="login-password" required>
+                    <label>Password</label>
+                </div>
+                <button type="submit" class="btn">Login</button>
+                <div class="login-register">
+                    <p>Don't have account? <a href="#" class="register-link">Register</a></p>
+                </div>
+            </form>
+        </div>
+
+        <div class="form-box register">
+            <h2>Registration</h2>
+            <form id="register-form">
+                <div class="input-box">
+                    <span class="icon">
+                        <ion-icon name="person-outline"></ion-icon>
+                    </span>
+                    <input type="text" id="username" name="username" required>
+                    <label>Username</label>
+                </div>
+
+                <div class="input-box">
+                    <span class="icon">
+                        <ion-icon name="mail-outline"></ion-icon>
+                    </span>
+                    <input type="email" id="email" name="email" required>
+                    <label>Email</label>
+                </div>
+
+                <div class="input-box">
+                    <span class="icon">
+                        <ion-icon name="lock-closed-outline"></ion-icon>
+                    </span>
+                    <input type="password" id="password" name="password" required>
+                    <label>Password</label>
+                </div>
+                <button type="submit" class="btn">Register</button>
+                <div class="login-register">
+                    <p>Already have account? <a href="#" class="login-link">Login</a></p>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script type="module" src="/src/pages/mainPage.js"></script>
+    <script type="module" src="/src/pages/postInfoPage.js"></script>
+    <script type="module" src="/src/pages/myPostsPage.js"></script>
+    <script type="module" src="/src/pages/newPostPage.js"></script>
+    <script type="module" src="/src/pages/likedPostsPage.js"></script>
+    <script type="module" src="/src/pages/loginPage.js"></script>
+
+    <script type="module" src="/src/scripts/loginView.js"></script>
+    <script type="module" src="/src/scripts/checkAuth.js"></script>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>

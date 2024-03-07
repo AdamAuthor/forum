@@ -1,0 +1,8 @@
+{
+    "database": {
+        "driver": "sqlite3",
+        "path": "./database",
+        "fileName": "forum.db",
+        "schemesDir": "./database/schema"
+    }
+}
