@@ -59,6 +59,13 @@ cd forum
 make build
 make run
 ```
+or use:
+
+```bash
+make all
+```
+
+for buid and run app.
 
 4. Access the Application:
 
