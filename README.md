@@ -35,8 +35,6 @@ In order for users to communicate between each other, they will have to be able 
 - Database: SQLite
 - Containerization: Docker
 - Build Automation: Makefile
-- Getting Started
-- Clone the Repository:
 
 ## Getting Started
 
